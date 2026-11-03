@@ -198,8 +198,8 @@ Intelligent-Academic-Monitoring/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Tharun-720/Intelligent-Academic-Monitoring.git
-cd Intelligent-Academic-Monitoring
+git clone https://github.com/Tharun-720/Student-Performance---AI.git
+cd Student-Performance---AI
 ```
 
 ### 2. Set Up Virtual Environment
