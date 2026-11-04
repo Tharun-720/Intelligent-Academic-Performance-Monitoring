@@ -191,3 +191,4 @@ with fac_tabs[3]:
         st.dataframe(df_invs[cols_show], width="stretch", hide_index=True)
     else:
         st.info("No faculty interventions recorded yet.")
+

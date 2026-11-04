@@ -244,3 +244,4 @@ with st.expander("🛡️ Responsible-Use Policy & Decision Support Safeguards",
     """)
 
 st.caption("TREKVERSE Intelligent Academic Performance Monitoring & Recommendation System · Official Release v1.0.0")
+

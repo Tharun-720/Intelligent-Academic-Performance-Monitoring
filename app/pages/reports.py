@@ -102,3 +102,4 @@ try:
 
 except Exception as exc:
     st.error(f"Error compiling PDF report: {exc}")
+

@@ -196,3 +196,4 @@ with s_tabs[3]:
         mime="application/pdf",
         type="primary"
     )
+

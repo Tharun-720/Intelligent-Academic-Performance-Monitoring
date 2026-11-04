@@ -155,3 +155,4 @@ with tab4:
         c_img1.image(str(img_conf), caption="Test Set Support Tier Confusion Matrix", width="stretch")
     if img_res.exists():
         c_img2.image(str(img_res), caption="Residual Error Distribution of Selected Regressor", width="stretch")
+

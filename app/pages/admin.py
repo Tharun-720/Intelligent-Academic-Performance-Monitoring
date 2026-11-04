@@ -310,3 +310,4 @@ with tabs[4]:
     if st.button("Apply Threshold Policy"):
         log_audit("admin", "admin", "Thresholds Updated", "Institutional early-warning risk cutoffs adjusted.")
         st.success("New institutional policy saved.")
+

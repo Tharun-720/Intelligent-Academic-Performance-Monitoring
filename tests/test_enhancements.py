@@ -88,3 +88,22 @@ def test_database_persistence(tmp_path, predictor, sample_record):
     all_invs = get_all_interventions(db_file)
     assert len(all_invs) == 1
     assert all_invs[0]["roll_number"] == "STU1024"
+
+
+def test_modular_subpackage_exports():
+    """Verify that all src subpackages (prediction, recommendations, clustering, etc.) export cleanly."""
+    from src.prediction import StudentPredictor as SP
+    from src.recommendations import simulate_academic_scenario as SAS, generate_personalized_study_plan as GPS
+    from src.clustering import get_interactive_cluster_radar as GCR
+    from src.preprocessing import load_raw_data as LRD
+    from src.training import train_pipeline as TP
+    from src.feature_engineering import engineer_features as EF
+
+    assert callable(SP)
+    assert callable(SAS)
+    assert callable(GPS)
+    assert callable(GCR)
+    assert callable(LRD)
+    assert callable(TP)
+    assert callable(EF)
+

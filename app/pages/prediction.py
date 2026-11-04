@@ -241,3 +241,4 @@ if pred_res is not None and curr_input is not None:
             st.markdown(f"- **{r['name']}**: {r['use']} ([Link]({r['url']}))" if r.get("url") else f"- **{r['name']}**: {r['use']}")
 else:
     st.info("Configure the parameters above and click **Generate AI Academic Prediction**.")
+
