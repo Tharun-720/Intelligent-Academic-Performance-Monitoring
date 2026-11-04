@@ -15,7 +15,7 @@
 
 > 🔗 **Active Web Application (Local Host)**: [http://localhost:8501](http://localhost:8501)  
 > 🚀 **Deployable on Streamlit Cloud**: [Streamlit Community Cloud Deployment](https://share.streamlit.io/)  
-> 📦 **GitHub Official Repository**: [https://github.com/Tharun-720/Student-Performance---AI](https://github.com/Tharun-720/Student-Performance---AI)  
+> 📦 **GitHub Official Repository**: [https://github.com/Tharun-720/Intelligent-Academic-Performance-Monitoring](https://github.com/Tharun-720/Intelligent-Academic-Performance-Monitoring)  
 > 👤 **Lead Author**: **Salapala Tharun Kumar Reddy** · **ID**: `232G1A3249` · **Institution**: Trekverse AI Academy  
 
 ---
@@ -234,8 +234,8 @@ Intelligent-Academic-Monitoring/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Tharun-720/Student-Performance---AI.git
-cd Student-Performance---AI
+git clone https://github.com/Tharun-720/Intelligent-Academic-Performance-Monitoring.git
+cd Intelligent-Academic-Performance-Monitoring
 ```
 
 ### 2. Set Up Virtual Environment
