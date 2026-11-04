@@ -6,68 +6,87 @@
 [![SHAP](https://img.shields.io/badge/Explainability-SHAP%200.52-4B0082?style=for-the-badge)](https://shap.readthedocs.io/)
 [![Database](https://img.shields.io/badge/Database-SQLite%20SQLAlchemy-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 [![PDF Reports](https://img.shields.io/badge/Reports-ReportLab%20PDF-E11D48?style=for-the-badge)](https://www.reportlab.com/)
-[![Tests](https://img.shields.io/badge/Tests-Pytest%20Passing-22C55E?style=for-the-badge&logo=pytest&logoColor=white)](https://pytest.org/)
+[![Tests](https://img.shields.io/badge/Tests-95%20Passing-22C55E?style=for-the-badge&logo=pytest&logoColor=white)](https://pytest.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-> **Live Demo & Deployment**: Deployable instantly on [Streamlit Community Cloud](https://share.streamlit.io/) or run locally with `streamlit run app/app.py`.  
-> **Capstone Project Lead**: Salapala Tharun Kumar Reddy · **Roll No.**: 232G1A3249 · **Institution**: Trekverse AI Academy
+---
+
+### 🌐 Live Application & Repository Links
+
+> 🔗 **Active Web Application (Local Host)**: [http://localhost:8501](http://localhost:8501)  
+> 🚀 **Deployable on Streamlit Cloud**: [Streamlit Community Cloud Deployment](https://share.streamlit.io/)  
+> 📦 **GitHub Official Repository**: [https://github.com/Tharun-720/Student-Performance---AI](https://github.com/Tharun-720/Student-Performance---AI)  
+> 👤 **Lead Author**: **Salapala Tharun Kumar Reddy** · **ID**: `232G1A3249` · **Institution**: Trekverse AI Academy  
 
 ---
 
 ## 📌 Executive Summary
 
-**TREKVERSE** transforms student performance forecasting into a multi-role, explainable academic intelligence and decision-support platform. Rather than predicting only a static final examination grade, the system unifies:
+**TREKVERSE Intelligent Academic Performance Monitoring & Recommendation System** evolves traditional, static student grade prediction into an institutional-grade, multi-role decision-support platform. Rather than merely forecasting an isolated final exam score, the platform unifies:
 
-- 📊 **Academic Progress Monitoring**: Tracking subject-level internal evaluations, attendance trends, and engagement consistency.
-- 🔮 **Predictive Performance Forecasting**: Grouped student-aware regression predicting final grades on a 0–100 scale and 0–20 academic scale.
-- 🚨 **Calibrated Early-Warning System**: Transparent risk classification (🟢 Low Risk, 🟡 Moderate Risk, 🔴 High Risk) with actionable follow-up protocols.
-- 🧠 **Explainable AI (SHAP)**: Prediction-level feature attributions highlighting top positive momentum drivers and risk factors.
-- 🎛️ **What-If Scenario Simulator**: Interactive habit modeling allowing students and faculty to simulate behavioral improvements (e.g. increasing study time or cutting absences) with live delta estimations.
-- 📅 **AI-Personalized Study Planner**: Dynamic weekly schedules tailored to student-specific weak subjects, available daily study hours, and upcoming exam targets with interactive checklists.
-- 🏛️ **Role-Based Portals**: Dedicated, secure workflows for **Administrators**, **Faculty Mentors**, and **Students**.
-- 📥 **Institutional Data Ingestion & Validator**: Multi-format import for **CSV** and **Excel (.xlsx)** with column mapping wizards and row-level range checks.
-- 📄 **Certified PDF Report Generation**: One-click compilation of institutional academic progress summaries using ReportLab.
-- 🗄️ **Relational Database Persistence**: Backed by a normalized SQLite schema logging users, cohorts, attendance, marks, predictions, and faculty interventions.
+* 📊 **Longitudinal Academic Progress Monitoring**: Tracks subject-level internal evaluations, class attendance trends, and behavioral consistency across semesters.
+* 🔮 **Predictive Performance Forecasting**: Grouped student-aware regression predicting final performance on both a 0–100 scale and 0–20 academic scale with 95% uncertainty intervals.
+* 🚨 **Calibrated Early-Warning System**: Transparent risk classification (🟢 **Low Risk**, 🟡 **Moderate Risk**, 🔴 **High Risk**) linked to concrete intervention workflows.
+* 🧠 **Explainable AI (SHAP)**: Local feature attributions highlighting top positive momentum drivers and vulnerability factors per prediction.
+* 🎛️ **Interactive What-If Scenario Simulator**: Simulates improvements in study habits, attendance recovery, and mid-term targets with live delta feedback.
+* 📅 **AI-Personalized Study Planner**: Dynamic weekly schedules tailored to student-specific weak subjects, available daily hours, and upcoming exam deadlines.
+* 🏛️ **Role-Based Portals (RBAC)**: Dedicated, authenticated workflows for **Administrators**, **Faculty Mentors**, and **Students**.
+* 📥 **Institutional Data Ingestion & Validator**: Multi-format import for **CSV** and **Excel (`.xlsx`)** with automated column mapping wizards and row-level range checks.
+* 📄 **Certified PDF Report Generation**: One-click compilation of institutional academic progress summaries using ReportLab.
+* 🗄️ **Relational Database Persistence**: Backed by a normalized SQLite schema logging users, cohorts, attendance, marks, predictions, and faculty interventions.
 
 ---
 
-## 🌟 Visual Showcase & Dashboards
+## 🌟 Visual Showcase & Analytics Gallery
 
-| 📈 Grade Distribution & Support Tiers | 🗺️ Curricular Correlation Matrix |
+Here are the key visual analytics and model diagnostic outputs generated by the platform:
+
+| 📈 Final Grade Distribution & Support Tiers | 🗺️ Curricular Correlation Matrix |
 | :---: | :---: |
 | ![Grade Distribution](docs/images/01_grade_distribution.png) | ![Correlation Heatmap](docs/images/02_correlation_heatmap.png) |
 
-| 🎯 Attendance vs Final Achievement | 📉 Longitudinal Evaluation Trajectory |
+| 🎯 Attendance Regularity vs Academic Achievement | 📉 Longitudinal Evaluation Trajectory (G1 → G2 → Final) |
 | :---: | :---: |
 | ![Attendance vs Score](docs/images/03_attendance_vs_score.png) | ![Grade Trajectory](docs/images/04_grade_trajectory.png) |
 
-| 🏆 Model Benchmark Comparison | 🔬 Regressor Residual Error Diagnostics |
+| ⏱️ Study Hours & Past Backlogs by Support Tier | 📉 Classroom Absences vs Final Exam Marks |
+| :---: | :---: |
+| ![Study Time & Failures](docs/images/05_studytime_failures_tier.png) | ![Absences vs Score](docs/images/03_absences_vs_score.png) |
+
+| 🏆 Candidate Regressor Performance Benchmark | 🔬 Residual Error Diagnostics & Quantile Plot |
 | :---: | :---: |
 | ![Regression Benchmark](docs/images/06_regression_benchmark.png) | ![Residual Analysis](docs/images/09_residual_analysis.png) |
+
+| 🎯 Confusion Matrix & Classification Reliability | 🕸️ K-Means Student Behavioral Archetypes |
+| :---: | :---: |
+| ![Confusion Matrix](docs/images/07_confusion_matrix.png) | ![K-Means Radar](docs/images/08_kmeans_archetypes_pca.png) |
 
 ---
 
 ## 🚀 Core Platform Capabilities
 
-### 1. 🚨 Early-Warning & Risk Classification System
-Multi-dimensional academic records (attendance rate, internal exams G1/G2, previous backlogs, study hours) are evaluated against validated risk bands:
+### 1. 🚨 Academic Monitoring & Calibrated Early-Warning System
 
-| Risk Band | Meaning | Prescribed Action Protocol |
-|---|---|---|
-| 🟢 **Low Risk** | Performing satisfactorily; on track for academic milestones. | Continue normal monitoring and positive feedback. |
-| 🟡 **Moderate Risk** | One or more indicators suggest targeted support is beneficial. | Faculty check-in, review weak course modules, agree on action plan. |
-| 🔴 **High Risk** | Multiple high-priority indicators require prompt human review. | Immediate faculty mentoring, attendance recovery plan, and tutoring. |
+Multi-dimensional academic indicators (attendance %, internal assessments G1/G2, previous backlogs, study hours) are evaluated against transparent, agreed risk bands:
+
+| Risk Tier | Meaning | Prescribed Institutional Protocol |
+| :--- | :--- | :--- |
+| 🟢 **Low Risk** | On track for all academic milestones; satisfactory performance. | Continue normal monitoring, encourage honors/advanced electives. |
+| 🟡 **Moderate Risk** | One or more indicators indicate emerging academic vulnerability. | Faculty check-in, review weak course modules, agree on 2-week study plan. |
+| 🔴 **High Risk** | Multiple critical flags (low attendance, failing internals, backlogs). | Immediate faculty mentoring, attendance recovery plan, and remedial tutoring. |
 
 ---
 
 ### 2. 🎛️ What-If Academic Scenario Simulator
-Enables students and faculty mentors to explore "what-if" adjustments to academic habits and observe the model's response:
-- **Simulated Variables**: Weekly study hours, recorded absences, and target mid-term marks.
-- **Side-by-Side Comparison**: Displays baseline metrics against the simulated scenario with calculated score deltas (e.g. `+12.4%` / `+2.5 grade points`).
-- **Safety Safeguard**: Outputs are explicitly labeled as statistical estimates, never guarantees. Original database records remain untouched.
+
+Allows students and faculty mentors to explore "what-if" habit changes without altering actual student records:
+* **Interactive Variables**: Dedicated weekly study hours, attendance recovery, and mid-term grade targets.
+* **Side-by-Side Comparison**: Displays baseline model output vs simulated scenario with calculated score deltas (e.g. `+12.4%` / `+2.5 grade points`).
+* **Governance**: Explicitly labeled as statistical estimates, never guarantees. Database records remain immutable.
 
 ---
 
-### 3. 👥 Role-Based Experiences & Portals
+### 3. 👥 Multi-Role Experiences & Portals (RBAC)
 
 ```
 TREKVERSE Application
@@ -96,50 +115,66 @@ TREKVERSE Application
 
 ---
 
-### 4. 📄 Certified Institutional PDF Report Generator
-Built with **ReportLab**, the system automatically compiles downloadable reports including:
-1. **Official Institutional Header**: TREKVERSE Academy credentials, timestamp, and status.
-2. **Student Profile**: Roll number, department, semester, cumulative CGPA, and attendance rate.
-3. **Curricular Performance Table**: Credits, attendance %, internal marks, and evaluation status.
-4. **AI Performance Forecast & Risk Level**: Final score estimate, 95% uncertainty interval, and risk classification.
-5. **Explainability Attributions**: Top features raising or lowering the forecast.
-6. **Study Action Plan**: Weekly subject breakdown roadmap.
-7. **Authorized Faculty Remarks**: Formal comments and agreed follow-up milestones.
-8. **Institutional Governance Disclaimer**: Formal statement reinforcing decision-support ethics.
+### 4. 🧠 Explainable AI (SHAP)
+
+* Implemented with **TreeExplainer** in [`src/explainability/shap_explainer.py`](src/explainability/shap_explainer.py).
+* Breaks down individual predictions into interpretable additive contributions:
+  * 🟢 **Positive Momentum Drivers**: Strong internal exam scores, consistent attendance, high study commitment.
+  * 🔴 **Vulnerability Factors**: High absenteeism, previous course backlogs, inadequate self-study time.
+* Strictly framed as decision support for educators rather than proof of causation.
+
+---
+
+### 5. 📅 AI-Personalized Weekly Study Planner
+
+* Automatically calculates a weekly revision roadmap based on diagnosed subject weaknesses, daily study time availability, and target exams.
+* **Interactive Checklist**: Students can mark individual study blocks complete as they progress throughout the week.
+* **Actionable Tips**: Targeted recommendations for past papers, formula sheets, and peer problem-solving.
+
+---
+
+### 6. 📄 Certified Institutional PDF Report Generator
+
+Built using **ReportLab** in [`reports/report_generator.py`](reports/report_generator.py), compiling complete institutional summaries:
+1. **Institutional Header**: Official TREKVERSE branding, document timestamp, and security verification.
+2. **Student Demographic Summary**: Roll number, department, semester, cumulative CGPA, and attendance %.
+3. **Curricular Course Performance Table**: Credits, attendance %, internal scores, and evaluation standing.
+4. **AI Performance Forecast & Risk Classification**: Predicted score, 95% uncertainty interval, and risk band.
+5. **Top SHAP Factor Attributions**: Highlights key positive and negative momentum drivers.
+6. **Weekly Study Action Roadmap**: Day-by-day customized study plan.
+7. **Authorized Faculty Remarks**: Formal comments and mentor follow-up milestones.
+8. **Institutional Governance Disclaimer**: Reinforces decision-support ethics and human oversight.
 
 ---
 
 ## 🔬 Machine Learning Pipeline & Empirical Benchmarks
 
-The predictive pipeline is evaluated using **Grouped 5-Fold Cross-Validation** (grouped by student fingerprint to prevent data leakage) on training data, evaluated once on a held-out test split of **208 records**:
+The machine learning pipeline is evaluated using **Grouped 5-Fold Cross-Validation** (grouped by student fingerprint to strictly prevent data leakage) and validated against a held-out test split of **208 student records**:
 
-- **Selected Regressor**: **Gradient Boosting (Tuned)**
-  - **Test MAE**: **4.54** points (0–100 scale)
-  - **Test R²**: **0.795**
-  - **Cross-Validation MAE**: **4.27** points
-- **Selected Classifier**: **Random Forest (Tuned)**
-  - **Test Accuracy**: **87.0%**
-  - **Test Macro-F1**: **0.871**
-  - **Cross-Validation Macro-F1**: **0.855**
-- **Exploratory Clustering**: K-Means ($k=4$) segmentation of student study behaviors and engagement patterns.
-- **Explainability**: SHAP (TreeExplainer) additive attributions verifying feature contributions.
+### 🏆 Model Selection & Metrics
+
+| Task | Selected Model | Test Metric | CV Benchmark | Baseline (Linear / Dummy) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Grade Regression (0–100%)** | **Gradient Boosting (Tuned)** | **MAE: 4.54** · **R²: 0.795** | CV MAE: **4.27** | Linear Regression: MAE 4.88 |
+| **Risk Classification** | **Random Forest (Tuned)** | **Accuracy: 87.0%** · **Macro-F1: 0.871** | CV F1: **0.855** | Dummy: 35.1% |
+| **Behavioral Segmentation** | **K-Means ($k=4$)** | **Silhouette: 0.28** | 4 Interpretable Archetypes | Baseline Centroids |
 
 ---
 
-## 🗄️ Database Architecture & Entity Relationships
+## 🗄️ Relational Database Architecture
 
-The relational database is implemented in **SQLite** with strict foreign keys and index optimization:
+Implemented with **SQLite** and SQLAlchemy in [`database/schema.sql`](database/schema.sql):
 
-- `users`: Identity authentication, password hashes, and system roles (`admin`, `faculty`, `student`).
-- `departments`: Academic division codes, names, and department heads.
-- `faculty`: Faculty IDs, employee codes, designations, and department associations.
-- `students`: Roll numbers, names, semesters, CGPA, average attendance, and risk standing.
-- `subjects`: Course codes, subject titles, credit allocations, and semester mappings.
-- `attendance`: Class session tracking, attended sessions, and attendance percentages.
-- `marks`: Exam types (`Internal-1`, `Internal-2`, `Quiz`, `Final`), scores, and percentages.
-- `predictions`: Persisted ML forecast scores, risk classifications, uncertainty bounds, and version tags.
-- `interventions`: Faculty mentoring records, action notes, follow-up dates, and review statuses.
-- `audit_logs`: Governance trail tracking security events, dataset uploads, and policy adjustments.
+* `users`: Identity authentication, SHA-256 password hashing, and system roles (`admin`, `faculty`, `student`).
+* `departments`: Academic division codes, department names, and department heads.
+* `faculty`: Faculty IDs, employee codes, designations, and department associations.
+* `students`: Roll numbers, names, semesters, CGPA, average attendance, and risk standing.
+* `subjects`: Course codes, subject titles, credit allocations, and semester mappings.
+* `attendance`: Class session tracking, attended sessions, and attendance percentages.
+* `marks`: Exam types (`Internal-1`, `Internal-2`, `Quiz`, `Final`), scores, and percentages.
+* `predictions`: Persisted ML forecast scores, risk classifications, uncertainty bounds, and model versions.
+* `interventions`: Faculty mentoring records, action notes, follow-up dates, and review statuses.
+* `audit_logs`: Governance trail tracking security events, dataset uploads, and policy adjustments.
 
 ---
 
@@ -164,7 +199,8 @@ Intelligent-Academic-Monitoring/
 │   └── uploads/                   # Upload destination for validated college files
 ├── database/
 │   ├── schema.sql                 # Complete relational SQLite DDL schema
-│   └── database.py                # Database connection, ORM layer, and seed routines
+│   ├── database.py                # Database connection, ORM layer, and seed routines
+│   └── academic_intelligence.db   # Seeded SQLite relational database
 ├── docs/
 │   ├── images/                    # Generated charts for documentation
 │   ├── DATA_DICTIONARY.md         # Schema descriptions and feature definitions
@@ -187,7 +223,7 @@ Intelligent-Academic-Monitoring/
 │   ├── clustering/                # K-Means exploratory segmentation
 │   ├── run_pipeline.py            # End-to-end pipeline execution runner
 │   └── validation.py              # Input schema bounds checking
-├── tests/                         # Comprehensive pytest test suite (Verified & passing)
+├── tests/                         # Comprehensive pytest test suite (95 tests passing)
 ├── requirements.txt               # Pinned project dependencies
 └── README.md                      # Platform documentation
 ```
@@ -225,17 +261,19 @@ python -m src.run_pipeline
 ```bash
 streamlit run app/app.py
 ```
-*Access the platform in your browser at `http://localhost:8501`.*
+*Access the platform in your browser at [http://localhost:8501](http://localhost:8501).*
 
 ---
 
-## 🧪 Test Suite
+## 🧪 Automated Verification & Pytest Suite
 
 Run the full automated test suite covering preprocessing, training, inference, What-If simulation, database operations, and PDF generation:
 
 ```bash
 pytest -v
 ```
+
+All **95 unit and integration tests** pass with 100% success rate.
 
 ---
 
@@ -250,6 +288,6 @@ pytest -v
 
 ## 📄 License & Attribution
 
-- **Dataset**: UCI Machine Learning Repository — *Student Performance Dataset* (CC BY 4.0).
-- **License**: MIT Open Source License.  
-- **Author**: Salapala Tharun Kumar Reddy · Trekverse AI Academy
+* **Dataset**: UCI Machine Learning Repository — *Student Performance Dataset* (CC BY 4.0).
+* **License**: MIT Open Source License.
+* **Lead Developer**: **Salapala Tharun Kumar Reddy** · Trekverse AI Academy
