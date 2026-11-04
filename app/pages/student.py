@@ -23,7 +23,7 @@ from database.database import (
     get_student_academic_details,
     get_student_by_roll
 )
-from reports.report_generator import generate_student_pdf_report
+from src.report_generator import generate_student_pdf_report
 from src.recommendations import generate_personalized_study_plan
 
 st.set_page_config(page_title="Student Dashboard — TREKVERSE", page_icon="🎓", layout="wide")
@@ -130,14 +130,22 @@ with s_tabs[1]:
     st.markdown(f"**Primary Focus Subject**: `{study_plan['primary_focus']}` | **Total Planned Weekly Effort**: `{study_plan['total_weekly_hours']:.1f} Hours`")
 
     st.write("#### Weekly Activity Schedule & Task Checklist")
-    schedule = study_plan["schedule_table"]
+    schedule_df = study_plan["schedule_table"]
+    st.dataframe(schedule_df, width="stretch", hide_index=True)
 
     # Interactive Task Checklist
-    for item in schedule:
+    st.write("##### Daily Action Tracker:")
+    for _, item in schedule_df.iterrows():
         col_chk, col_det = st.columns([1, 8])
         key_name = f"task_{student['roll_number']}_{item['Day']}"
-        done = col_chk.checkbox("Done", key=key_name)
-        status_text = f"~~**{item['Day']}** ({item['Allocated_Hours']} hrs): {item['Subject']} — *{item['Activity']}*~~" if done else f"**{item['Day']}** ({item['Allocated_Hours']} hrs): {item['Subject']} — *{item['Activity']}*"
+        done = col_chk.checkbox("Complete", key=key_name)
+        subj = item.get("Primary Subject", "General")
+        dur = item.get("Duration", "1 hr")
+        act = item.get("Activity", "")
+        if done:
+            status_text = f"✅ ~~**{item['Day']}** ({dur}): {subj} — *{act}*~~"
+        else:
+            status_text = f"📌 **{item['Day']}** ({dur}): {subj} — *{act}*"
         col_det.markdown(status_text)
 
     st.write("#### Actionable Study Guidance:")

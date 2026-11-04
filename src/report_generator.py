@@ -84,3 +84,20 @@ SECTION 5: PROGRESS TRACKING & DISCLAIMER
 ================================================================================
 """
     return report
+
+
+# Dynamic PDF generator hook avoiding 'reports.py' namespace collision
+try:
+    import importlib.util
+    from pathlib import Path
+    _rep_path = Path(__file__).resolve().parent.parent / "reports" / "report_generator.py"
+    if _rep_path.exists():
+        _spec = importlib.util.spec_from_file_location("_trekverse_pdf_gen", str(_rep_path))
+        _mod = importlib.util.module_from_spec(_spec)
+        _spec.loader.exec_module(_mod)
+        generate_student_pdf_report = _mod.generate_student_pdf_report
+    else:
+        generate_student_pdf_report = None
+except Exception:
+    generate_student_pdf_report = None
+

@@ -20,7 +20,7 @@ from database.database import (
     get_student_by_roll,
     log_audit
 )
-from reports.report_generator import generate_student_pdf_report
+from src.report_generator import generate_student_pdf_report
 
 st.set_page_config(page_title="PDF Reports — TREKVERSE", page_icon="📄", layout="wide")
 
